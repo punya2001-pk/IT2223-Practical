@@ -1,0 +1,104 @@
+// Write a MATLAB script to concatenate two strings ('apple' and 'banana') without any space and display the result.
+str1='apple'
+str2='banana'
+result=strcat(str1,str2)
+disp(result)
+
+// Given a cell array x = {'hello', 'world', 'sri'}, write a script to concatenate all words into a single string without spaces.
+x={'hello','world','sri'}
+result2=strcat(x{:})
+disp(result2)
+
+// Modify the previous question so that the words are joined using ':' as a separator.
+result3=strjoin(x,':')
+disp(result3)
+
+// Write a MATLAB script to compare two strings ('age' and 'tryr') and return whether they are equal or not.
+str1='age'
+str2='tryr'
+
+// Given a string 'the cat sat on the mat', write a MATLAB script to find the position of the word 'cat'.
+strcmp(str1,str2)
+stril='the cat sat on the mat'
+indic=strfind(stril,'cat')
+
+// Given the same string 'the cat sat on the mat', replace 'cat' with 'dog' and display the updated string.
+stril='the cat sat on the mat'
+old='cat'
+new='dog'
+strrep(stril,old,new)
+
+// Given the input string 'apple,banana,orange,grapes', write a script to split it into separate words using , as a delimiter.
+inputstring='apple','banana','orange','graphes';
+substring=strsplit(inputstring,',')
+
+// Convert the string 'apPLE' to: All lowercase,All uppercase
+st1='apPLE'
+lower(st1)
+upper(st1)
+
+// Write a MATLAB script to remove leading and trailing spaces from the string ' hello world '.
+strtrim(' hello world ')
+
+// Write a MATLAB script that takes a student's marks as input and classifies them into grades:
+/*	A+ for marks ≥ 90
+	A for marks ≥ 80
+	B for marks ≥ 70
+	C for marks ≥ 60
+	D for marks ≥ 50
+	F for marks < 50
+	If the input is greater than 100 or less than 0, display 'Invalid marks'.
+	marks=input('Enter your mark: ')*/
+
+if marks>100 || marks <0
+    disp('Invalid marks')
+elseif marks>=90
+    disp('A+')
+elseif  marks>=80
+        disp('A')
+elseif marks>=70
+        disp('B')
+elseif marks>=60
+        disp('C')
+elseif marks>=50
+        disp('D')
+else 
+    disp('F')
+end
+
+// Finding the Maximum of Three Numbers
+// Write a MATLAB script to take three numbers as input and determine the largest among them.
+
+num1=input('Enter the number1: ')
+num2=input('Enter the number2: ')
+num3=input('Enter the number3: ')
+
+if num1>num2 && num1>num3
+    disp(['The maximum number is ',num2str(num1)])
+elseif num2>num3 && num2>num1
+    disp(['The maximum number is ',num2str(num2)])
+else
+    disp(['The maximum number is ',num2str(num3)])
+end
+
+// Checking Vowel or Consonant
+/*	Takes a single letter as input.
+	Converts it to lowercase.
+	Checks if the letter is a vowel (a, e, i, o, u) or a consonant.
+	Displays an appropriate message.
+	If the input is not a single letter, display 'Please enter a valid single letter'.
+*/
+
+letter=input('Enter the letter: ','s');
+
+letter=lower(letter)
+
+if length(letter) == 1 && ischar(letter)
+    if letter == ['a','e','i','o','u']
+        disp('The letter is a vowel')
+    else
+        disp('The letter is a consoneant')
+    end
+else
+    disp('Please enter the valid single letter')
+end
