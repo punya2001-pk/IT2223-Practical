@@ -1,176 +1,77 @@
-# MATLAB Code Repository
+# IT2223 Practical
 
-This repository contains various MATLAB scripts demonstrating basic mathematical operations, matrix manipulations, and control structures such as loops and conditionals.
+01. Write a MATLAB script to concatenate two strings ('apple' and 'banana') without any space and display the result.
 
-## Requirements
-- MATLAB application is required to run these scripts.
+![1](https://github.com/user-attachments/assets/9570c03a-3a94-422e-bb8b-7d2094014290)
 
-## Included MATLAB Scripts
 
-### 1. Basic Arithmetic Operations
-```matlab
-% Define variables
-a = 5;
-b = 10;
+02. Given a cell array x = {'hello', 'world', 'sri'}, write a script to   concatenate all words into a single string without spaces.
 
-% Addition
-c = a + b;
-% Multiplication
-d = a * b;
-% Division
-e = a / b;
-% Subtraction
-f = a - b;
-```
-**Output:**
-```
-c = 15
-d = 50
-e = 0.5000
-f = -5
-```
+03. Modify the previous question so that the words are joined using ':' as a separator.
 
-### 2. Matrix Creation and Operations
-```matlab
-% Define Matrices
-A = [1 2 3];
-B = [4;5;6];
-C = [2 3 4;5 6 7;8 9 10];
+![2](https://github.com/user-attachments/assets/4c7e4150-7282-424e-a159-dcbd3cea7248)
 
-% Size of matrix
-size_C = size(C);
-% Sum of matrix elements
-sum_C = sum(sum(C));
-% Column-wise and row-wise sums
-col_sum = sum(C,1);
-row_sum = sum(C,2);
-```
-**Output:**
-```
-size_C = [3 3]
-sum_C = 54
-col_sum = [15 18 21]
-row_sum = [9; 18; 27]
-```
 
-### 3. Finding Min and Max Elements
-```matlab
-% Column-wise minimum
-min_col = min(C);
-% Minimum of whole matrix
-min_all = min(min(C));
-% Column-wise maximum
-max_col = max(C);
-% Maximum of whole matrix
-max_all = max(max(C));
-```
-**Output:**
-```
-min_col = [2 3 4]
-min_all = 2
-max_col = [8 9 10]
-max_all = 10
-```
+04. Write a MATLAB script to compare two strings ('age' and 'tryr') and return whether they are equal or not.
 
-### 4. Accessing Matrix Elements
-```matlab
-% Accessing specific elements
-second_element = C(2);
-first_row = C(1,:);
-first_column = C(:,1);
-last_element_first_row = C(1,end);
-```
-**Output:**
-```
-second_element = 5
-first_row = [2 3 4]
-first_column = [2; 5; 8]
-last_element_first_row = 4
-```
+05. Given a string 'the cat sat on the mat', write a MATLAB script to find the position of the word 'cat'.
 
-### 5. Matrix Addition, Subtraction, and Multiplication
-```matlab
-A = [1 2 3 4;5 6 7 8;9 10 11 12;13 14 15 16];
-B = A; % Duplicate matrix
+![3](https://github.com/user-attachments/assets/61f5c6d0-0fb9-4274-bb44-26a6fb15f362)
 
-% Element-wise Addition and Subtraction
-sum_matrix = A + B;
-diff_matrix = A - B;
 
-% Matrix Multiplication
-prod_matrix = A * B;
-```
-**Output:**
-```
-sum_matrix =
-  2  4  6  8
- 10 12 14 16
- 18 20 22 24
- 26 28 30 32
+06. Given the same string 'the cat sat on the mat', replace 'cat' with 'dog' and display the updated string.
 
-diff_matrix =
-  0  0  0  0
-  0  0  0  0
-  0  0  0  0
-  0  0  0  0
+![4](https://github.com/user-attachments/assets/30c9b9cc-bea8-49fd-b747-f6b91e019813)
 
-prod_matrix =
-  90  100  110  120
- 202  228  254  280
- 314  356  398  440
- 426  484  542  600
-```
 
-### 6. Conditional Statements
-```matlab
-num = 4;
-if num > 0
-    disp('The Number Is Positive')
-else
-    disp('The Number Is Negative')
-end
-```
-**Output:**
-```
-The Number Is Positive
-```
+07. Given the input string 'apple,banana,orange,grapes', write a script to split it into separate words using , as a delimiter.
 
-### 7. Checking Odd or Even Number
-```matlab
-if mod(num,2) == 0
-    disp('The Number Is Even')
-else
-    disp('The Number Is Odd')
-end
-```
-**Output:**
-```
-The Number Is Even
-```
+![5](https://github.com/user-attachments/assets/2ad74806-5dbe-48c9-809c-3d72074ffd00)
 
-### 8. While Loop: Printing Numbers 1 to 5
-```matlab
-a = 1;
-while a <= 5
-    disp (a)
-    a = a + 1;
-end
-```
-**Output:**
-```
-1
-2
-3
-4
-5
-```
 
-## How to Run the Scripts
-1. Open MATLAB.
-2. Copy and paste the desired script into the MATLAB command window or save it as a `.m` file and run it.
-3. Observe the output in the command window.
+08. Convert the string 'apPLE' to: All lowercase,All uppercase
 
-## Conclusion
-These MATLAB scripts demonstrate fundamental concepts such as arithmetic operations, matrix manipulation, conditional statements, and loops. They serve as an excellent introduction to MATLAB programming.
+![6](https://github.com/user-attachments/assets/63aa0617-ae88-489e-86c9-b23cf5f7d4e6)
 
+
+09. Write a MATLAB script to remove leading and trailing spaces from the string ' hello world '.
+
+![7](https://github.com/user-attachments/assets/27046965-4e15-47ea-a0e9-4968f8bfa38a)
+ 
+
+10. Write a MATLAB script that takes a student's marks as input and classifies them into grades:
+  A+ for marks ≥ 90
+	A for marks ≥ 80
+	B for marks ≥ 70
+	C for marks ≥ 60
+	D for marks ≥ 50
+	F for marks < 50
+	If the input is greater than 100 or less than 0, display 'Invalid marks'.
+
+ ![8](https://github.com/user-attachments/assets/71e85537-5d77-4b1d-adf9-4f6c2fece9d6)
+
+
+
+11. Finding the Maximum of Three Numbers
+    Write a MATLAB script to take three numbers as input and determine the largest among them.
+
+
+![9](https://github.com/user-attachments/assets/2406ddad-1676-4102-90c3-1caaf252081b)
+
+
+12. Checking Vowel or Consonant
+Takes a single letter as input.
+Converts it to lowercase.
+Checks if the letter is a vowel (a, e, i, o, u) or a consonant.
+Displays an appropriate message.
+If the input is not a single letter, display 'Please enter a valid single letter'.
+
+
+<img width="362" alt="10" src="https://github.com/user-attachments/assets/5b423ec7-20c2-4468-9fb6-0999a10eabbb" />
+
+<img width="305" alt="11" src="https://github.com/user-attachments/assets/1290db7f-bea5-4c31-9792-b7be2b8c7ff8" />
+
+<img width="314" alt="12" src="https://github.com/user-attachments/assets/ddee1e11-2ec6-421d-a722-c7b2bec38bac" />
+
+<img width="302" alt="13" src="https://github.com/user-attachments/assets/768eb12e-00df-4d14-a8b4-805151fd1282" />
 
