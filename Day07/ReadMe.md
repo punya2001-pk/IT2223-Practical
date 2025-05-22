@@ -1,5 +1,6 @@
 # 01.create array with 1000 numbers.. use tic/toc to measure time for binary search
 
+```
 arr = 1:1000; 
 
 target = 750;
@@ -47,6 +48,7 @@ else
 end
 
 fprintf('Elapsed time: %.6f seconds\n', elapsed_time);
+```
 
 ## Output
 
@@ -56,7 +58,7 @@ fprintf('Elapsed time: %.6f seconds\n', elapsed_time);
 
 
 # 02.....
-
+```
 arr = 1:1000;
 
 target = 750;
@@ -134,7 +136,7 @@ else
     fprintf('Target not found using Linear Search\n');
     
 end
-
+```
 ## Output
 
 ![2](https://github.com/user-attachments/assets/611e48d6-ba89-4999-8b13-55c251925ca9)
@@ -142,7 +144,7 @@ end
 
 
 # 03.Selection sort
-
+```
 function sortedArray = selectionSort(arr)
 
     n = length(arr);
@@ -180,7 +182,7 @@ sortedArr = selectionSort(arr);
 disp('Sorted Array:');
 
 disp(sortedArr);
-
+```
 
 ## Output
 
