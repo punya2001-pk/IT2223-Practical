@@ -1,4 +1,4 @@
-# 01.create array with 1000 numbers.. use ti/toc to measure time for binary search
+# 01.create array with 1000 numbers.. use tic/toc to measure time for binary search
 
 arr = 1:1000; 
 
