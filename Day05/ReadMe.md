@@ -1,6 +1,6 @@
 # Activity_01
 
-
+```
 AccBalance=1000;
 
 while true
@@ -54,7 +54,7 @@ while true
    
 end
 
-
+```
 ## Output
 
 ![Activity1](https://github.com/user-attachments/assets/6b89f598-5e3b-4bc2-af44-444257730a6c)
@@ -62,7 +62,7 @@ end
 
 # Activity_02
 
-
+```
 marks = zeros(1, 5);
 
 for i = 1:5
@@ -117,7 +117,7 @@ while true
     
 end
 
-
+```
 ## Output
 
 
@@ -130,7 +130,7 @@ end
 
 # Activity_03
 
-
+```
 numVoters = input('Enter the total number of voters: ');
 
 votes = zeros(1,4);
@@ -223,7 +223,7 @@ while true
             fprintf('Invalid choice! Please enter a valid option.\n');
     end
 end
-
+```
 
 ## Output
 
