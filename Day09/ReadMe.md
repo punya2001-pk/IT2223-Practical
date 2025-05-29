@@ -1,190 +1,48 @@
-# 01.create array with 1000 numbers.. use tic/toc to measure time for binary search
+# 01.Function output = function_name(inputs)
 
-arr = 1:1000; 
+## if you save the file you can called file name and parameters you can get outputs 
 
-target = 750;
-
-tic;
-
-low = 1;
-
-high = length(arr);
-
-found = false;
-
-while low <= high
-
-    mid = floor((low + high) / 2);
-    
-    if arr(mid) == target
-    
-        found = true;
-        
-        break;
-        
-    elseif arr(mid) < target
-    
-        low = mid + 1;
-        
-    else
-    
-        high = mid - 1;
-        
-    end
-    
-end
-
-elapsed_time = toc;
-
-if found
-
-    fprintf('Target found at index %d\n', mid);
-    
-else
-
-    fprintf('Target not found\n');
-    
-end
-
-fprintf('Elapsed time: %.6f seconds\n', elapsed_time);
-
-## Output
+![1](https://github.com/user-attachments/assets/60d2a408-28ec-40e1-841f-33ba33d0194d)
 
 
-![1](https://github.com/user-attachments/assets/21bd8eeb-9162-40be-a09e-2f6d1c8e850c)
+## If you called the function name you can get the outputs //2
+
+![2](https://github.com/user-attachments/assets/3dfcb7a7-afbb-4aea-8308-cb2134c98fe5)
 
 
+# 02.One function within called multiple operations 
 
-# 02.....
+## This function for input and multiple outputs
 
-arr = 1:1000;
-
-target = 750;
-
-tic;
-
-low = 1;
-
-high = length(arr);
-
-foundBinary = false;
-
-while low <= high
-
-    mid = floor((low + high) / 2);
-    
-    if arr(mid) == target
-    
-        foundBinary = true;
-        
-        break;
-        
-    elseif arr(mid) < target
-    
-        low = mid + 1;
-        
-    else
-    
-        high = mid - 1;
-        
-    end
-
-end
-
-binary_time = toc;
-
-tic;
-
-foundLinear = false;
-
-for i = 1:length(arr)
-
-    if arr(i) == target
-    
-        foundLinear = true;
-        
-        break;
-        
-    end
-    
-end
-
-linear_time = toc;
-
-fprintf('Binary Search Time: %.6f seconds\n', binary_time);
-
-fprintf('Linear Search Time: %.6f seconds\n', linear_time);
-
-if foundBinary
-
-    fprintf('Target found using Binary Search\n');
-    
-else
-
-    fprintf('Target not found using Binary Search\n');
-    
-end
-
-if foundLinear
-
-    fprintf('Target found using Linear Search\n');
-    
-else
-
-    fprintf('Target not found using Linear Search\n');
-    
-end
-
-## Output
-
-![2](https://github.com/user-attachments/assets/611e48d6-ba89-4999-8b13-55c251925ca9)
+![3](https://github.com/user-attachments/assets/75ad6fe6-1c3d-4a06-a39b-1b53a06973ce)
 
 
+# 03.How to diaplay string(your name) within Function 
 
-# 03.Selection sort
-
-function sortedArray = selectionSort(arr)
-
-    n = length(arr);
-    
-    for i = 1:n-1
-    
-        minIndex = i;
-        
-        for j = i+1:n
-        
-            if arr(j) < arr(minIndex)
-            
-                minIndex = j;
-                
-            end
-            
-        end
-      
-        temp = arr(i);
-        
-        arr(i) = arr(minIndex);
-        
-        arr(minIndex) = temp;
-        
-    end
-    
-    sortedArray = arr;
-    
-end
-
-arr = [64, 25, 12, 22, 11];
-
-sortedArr = selectionSort(arr);
-
-disp('Sorted Array:');
-
-disp(sortedArr);
+![4](https://github.com/user-attachments/assets/d6d045ab-74c8-4425-9529-a785cee651a7)
 
 
-## Output
+# 04.How to get the Pi value within function
+
+![5](https://github.com/user-attachments/assets/d913c15e-c44b-4da2-9dd3-a44e418e6f10)
 
 
-![3](https://github.com/user-attachments/assets/78769e7c-14ff-4834-aa48-3bd110de61e5)
+# 05.Function has not inputs and outputs 
 
+![6](https://github.com/user-attachments/assets/5492ab93-872f-4502-a4f8-26873e9cdf57)
+
+
+# 06.How to find given number factorial 
+
+![7](https://github.com/user-attachments/assets/ea9bba9f-e4dc-4475-b3df-fa0220d85c77)
+
+
+# 07.Getting user input number and find factorial using for loop 
+
+![8](https://github.com/user-attachments/assets/ff795853-671a-467f-9ac5-72d97c3520a0)
+
+
+# 08.Find factorial without using for loop 
+
+![9](https://github.com/user-attachments/assets/b5c3ee63-d6f3-46bb-af3d-2b586369b4bd)
 
