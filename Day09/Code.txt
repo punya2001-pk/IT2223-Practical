@@ -1,0 +1,91 @@
+01...
+
+// Function output = function_name(inputs)
+
+function sum = addNumbers(x,y)
+    sum = x + y;
+end
+
+// if you save the file you can called file name and parameters you can get outputs //1
+
+// If you called the function name you can get the outputs //2
+
+
+02...
+
+// One function within called multiple operations //3
+
+function [add,sub,mul,div] = operations(a,b)
+    add = a+b;
+    sub = a-b;
+    mul = a*b;
+    div = a/b;
+end
+
+// This function for input and multiple outputs
+
+
+03...
+
+// How to diaplay string(your name) within Function //4
+
+function greet(name)
+    disp(['Hello ',name])
+end
+
+
+04...
+
+// How to get the Pi value within function //5
+
+function piValue = getPi()
+    piValue = 3.1416;
+end
+
+
+05...
+
+// Function has not inputs and outputs //6
+
+function myFunction()
+    disp('hello, This function has no inputs and outputs');
+end
+
+
+06...
+
+// How to find given number factorial //7
+
+function fact = factorial(n)
+fact = 1;
+    for i=1:n
+        fact = fact * i;
+    end
+end
+
+
+07...
+
+// Getting user input number and find factorial using for loop //8
+
+function fact = factorial(n)
+n = input('Please enter the number: ');
+fact = 1;
+    for i=1:n
+        fact = fact * i;
+    end
+end
+
+
+08...
+
+// Find factorial without using for loop //9
+
+function fact = factorial_cal(a)
+    if a == 0 || a == 1
+        fact = 1;
+    else
+            fact = factorial_cal(a-1) * a;
+    end
+end
+
