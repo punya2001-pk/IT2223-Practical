@@ -1,190 +1,57 @@
-# 01.create array with 1000 numbers.. use tic/toc to measure time for binary search
+## Graph
 
-arr = 1:1000; 
-
-target = 750;
-
-tic;
-
-low = 1;
-
-high = length(arr);
-
-found = false;
-
-while low <= high
-
-    mid = floor((low + high) / 2);
-    
-    if arr(mid) == target
-    
-        found = true;
-        
-        break;
-        
-    elseif arr(mid) < target
-    
-        low = mid + 1;
-        
-    else
-    
-        high = mid - 1;
-        
-    end
-    
-end
-
-elapsed_time = toc;
-
-if found
-
-    fprintf('Target found at index %d\n', mid);
-    
-else
-
-    fprintf('Target not found\n');
-    
-end
-
-fprintf('Elapsed time: %.6f seconds\n', elapsed_time);
-
-## Output
+![graphQ](https://github.com/user-attachments/assets/01543886-6a0b-466b-a53e-05106baf83d6)
 
 
-![1](https://github.com/user-attachments/assets/21bd8eeb-9162-40be-a09e-2f6d1c8e850c)
+## Undirected Graph
+
+![graphQ1](https://github.com/user-attachments/assets/07600f48-988d-4b84-8761-067c0988b9e1)
 
 
+## Weighted undirected graph
 
-# 02.....
-
-arr = 1:1000;
-
-target = 750;
-
-tic;
-
-low = 1;
-
-high = length(arr);
-
-foundBinary = false;
-
-while low <= high
-
-    mid = floor((low + high) / 2);
-    
-    if arr(mid) == target
-    
-        foundBinary = true;
-        
-        break;
-        
-    elseif arr(mid) < target
-    
-        low = mid + 1;
-        
-    else
-    
-        high = mid - 1;
-        
-    end
-
-end
-
-binary_time = toc;
-
-tic;
-
-foundLinear = false;
-
-for i = 1:length(arr)
-
-    if arr(i) == target
-    
-        foundLinear = true;
-        
-        break;
-        
-    end
-    
-end
-
-linear_time = toc;
-
-fprintf('Binary Search Time: %.6f seconds\n', binary_time);
-
-fprintf('Linear Search Time: %.6f seconds\n', linear_time);
-
-if foundBinary
-
-    fprintf('Target found using Binary Search\n');
-    
-else
-
-    fprintf('Target not found using Binary Search\n');
-    
-end
-
-if foundLinear
-
-    fprintf('Target found using Linear Search\n');
-    
-else
-
-    fprintf('Target not found using Linear Search\n');
-    
-end
-
-## Output
-
-![2](https://github.com/user-attachments/assets/611e48d6-ba89-4999-8b13-55c251925ca9)
+![graphQ2](https://github.com/user-attachments/assets/36b2ac78-56ed-481f-9c4e-39c7683b054b)
 
 
+## Unweighted graph
 
-# 03.Selection sort
-
-function sortedArray = selectionSort(arr)
-
-    n = length(arr);
-    
-    for i = 1:n-1
-    
-        minIndex = i;
-        
-        for j = i+1:n
-        
-            if arr(j) < arr(minIndex)
-            
-                minIndex = j;
-                
-            end
-            
-        end
-      
-        temp = arr(i);
-        
-        arr(i) = arr(minIndex);
-        
-        arr(minIndex) = temp;
-        
-    end
-    
-    sortedArray = arr;
-    
-end
-
-arr = [64, 25, 12, 22, 11];
-
-sortedArr = selectionSort(arr);
-
-disp('Sorted Array:');
-
-disp(sortedArr);
+![graphQ3](https://github.com/user-attachments/assets/41ce0b5b-550d-4b52-8727-a69847801188)
 
 
-## Output
+## Adjencency matrix representation
+
+![1](https://github.com/user-attachments/assets/46da2fbc-af1a-4c6c-a6f0-d86fdea83997)
 
 
-![3](https://github.com/user-attachments/assets/78769e7c-14ff-4834-aa48-3bd110de61e5)
+## Node Colors
+
+![2](https://github.com/user-attachments/assets/5dbafab1-aac6-4b7b-95cc-4fadf8cb627c)
+
+
+## Directed weighted graph
+
+![3](https://github.com/user-attachments/assets/96b2d513-bd0f-4080-b5b9-16f2ff9da672)
+
+
+## Node color and line width
+
+![4](https://github.com/user-attachments/assets/74c2d8d0-706c-4a0d-828d-3326f371f967)
+
+
+## Edge color
+
+![5](https://github.com/user-attachments/assets/c46416c9-72ab-4553-9454-690be5c330ba)
+
+
+## Node connection
+
+![6](https://github.com/user-attachments/assets/97f13874-d745-405f-8f0c-16abe4b096eb)
+
+
+## Question
+
+
+<img width="339" alt="q" src="https://github.com/user-attachments/assets/b426b20f-a52f-4bf6-ac45-961682446722" />
+
 
 
