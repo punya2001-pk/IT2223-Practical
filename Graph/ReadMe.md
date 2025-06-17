@@ -54,4 +54,16 @@
 <img width="339" alt="q" src="https://github.com/user-attachments/assets/b426b20f-a52f-4bf6-ac45-961682446722" />
 
 
+## Exercise 02
+
+
+![1](https://github.com/user-attachments/assets/27224a37-c6a1-49de-b248-c8eea9da5e45)
+
+
+![3](https://github.com/user-attachments/assets/aaec52bd-3163-40e4-838e-a42c725a245c)
+
+
+![2](https://github.com/user-attachments/assets/40650707-0189-4b56-bb8a-4dc3653095d2)
+
+
 
